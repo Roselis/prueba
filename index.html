@@ -17,131 +17,219 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
 
+    <!-- fonts CDN-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 
     <style>
-        .color-bg{
+        .color-bg {
             background-color: #660066;
             color: #ffffff;
         }
-        .color-bg a{
+
+        .color-bg a {
             color: #ffffff;
         }
+
         .color-bg .navbar-toggler {
-            border-color: rgba(255,255,255,1);
+            border-color: rgba(255, 255, 255, 1);
         }
+
         .color-bg .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         }
+
         footer {
             font-size: 30px;
             padding-top: 25px;
             padding-bottom: 25px;
         }
+
         footer span {
             font-weight: bold;
+        }
+
+        .banner img {
+            position: relative;
+        }
+
+        .banner div {
+            font-family: 'Merriweather', serif;
+            font-size: 50px;
+            color: #ffffff;
+            position: absolute;
+            width: 100%;
+            top: 800px;
+        }
+
+        .banner hr {
+            color: #ffffff;
+            border-color: #ffffff;
+            max-width: 25%;
+            border-top: solid 7px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .img-thumbnail {
+
+        }
+
+        .works .col-md-4 {
+            background-color: #ffffff;
+            color: #000000;
+            margin: 10px;
+            max-width: 31%;
+        }
+
+        section {
+            font-family: 'Open Sans', sans-serif;
         }
     </style>
 
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg color-bg">
-        <div class="container">
-            <div class="text-center col-md-6 col-4 col-sm-5 col-lg-4">
+
+<nav class="navbar navbar-expand-lg color-bg fixed-top">
+    <div class="container">
+        <div class="text-center col-md-6 col-4 col-sm-5 col-lg-4">
             <span class="">Rosy</span>
-            </div>
-            <div class="col-md-2 col-sm-3 col-4">
+        </div>
+        <div class="col-md-2 col-sm-3 col-4">
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            </div>
-            <div class="navbar-collapse collapse col-lg-4" id="navMenu">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Sobre mi <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Experiencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Trabajos</a>
-                    </li>
-                </ul>
-            </div>
         </div>
-    </nav>
+        <div class="navbar-collapse collapse col-lg-4" id="navMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sobre mi <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experiencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trabajos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="row banner">
+        <img src="img/bg_hero.png" class="img-fluid w-100">
+        <div class="text-center">
+            <span>YO SOY</span>
+            <hr>
+            <span><strong>ROSY</strong></span>
+        </div>
+    </div>
 </header>
+<section>
+    <div class="container d-none d-lg-block">
+        <h2 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</h2>
+        <hr>
 
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Mi Experienciaprueba.html </h1>
-
-</div>
-
-<div class="container">
-    <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Meet & Coffe</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-            </div>
+        <div class="row ">
+            <div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod consequat sed sed ante.
+                Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex, id interdum nibh tristique ac. Maecenas in mi
+                blandit, euismod ipsum eu, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p></div>
+            <div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod consequat sed sed ante.
+                Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex, id interdum nibh tristique ac. Maecenas in mi
+                blandit, euismod ipsum eu, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p></div>
         </div>
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Iguana Page</h4>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 class="text-center">MI EXPERIENCIA</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="img/component1.png" class="img-fluid">
+                <h2>Stormtrooper</h2>
+                <p>1980 - 2014</p>
             </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-            </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Suricata</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>30 users included</li>
-                    <li>15 GB of storage</li>
-                    <li>Phone and email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+            <div class="col-md-6 text-center">
+                <img src="img/component2.png" class="img-fluid">
+                <h2>Desarrolladora Rails</h2>
+                <p>2014 - 2018</p>
             </div>
         </div>
     </div>
-</div>
-    <footer class="color-bg">
-        <div class="row">
-            <div class="col-8 col-md-8 text-center">
-                <span>Rosy</span>
+</section>
+<section>
+    <div class="container color-bg">
+        <h2 class="text-center">MIS ÚLTIMOS TRABAJOS</h2>
+        <hr>
+        <div class="row works" style="padding: 30px;">
+            <div class="col-md-4">
+                <img src="img/meet_coffee.png" class="img-fluid img-thumbnail img-rounded">
+                <h2>Meet&Coffe</h2>
+                <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
             </div>
-            <div class="col-1 col-md-4">
-                <i class="fab fa-github-square"></i>
-
-                <i class="fab fa-linkedin"></i>
-
-                <i class="fab fa-twitter-square"></i>
-
-                <i class="fab fa-facebook-square"></i>
+            <div class="col-md-4">
+                <img src="img/iguana_page.png" class="img-thumbnail img-rounded">
+                <h2>Iguana Page</h2>
+                <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/suricata.png" class="img-thumbnail img-rounded">
+                <h2>Suricata</h2>
+                <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/cuppon.png" class="img-fluid img-thumbnail img-rounded">
+                <h2>Cuppon</h2>
+                <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/ricomida.png" class="img-thumbnail img-rounded">
+                <h2>Ricomida</h2>
+                <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/dmark.png" class="img-thumbnail img-rounded">
+                <h2>DMark</h2>
+                <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+<section>
+    <div class="container d-none d-lg-block">
+        <br><br>
+        <h2 class="text-center"><strong>CONTACTO</strong></h2>
+        <hr>
+
+        <div class="row ">
+            <p class="text-center">¿Quieres Conocer más de mi?
+            </p>
+            <br><br><br>
+            <p class="text-center">
+                <button type="button" class="btn btn-dark">Comenzar</button>
+            </p>
+        </div>
+    </div>
+</section>
+<footer class="color-bg">
+    <div class="row">
+        <div class="col-8 col-md-8 text-center">
+            <span>Rosy</span>
+        </div>
+        <div class="col-1 col-md-4">
+            <i class="fab fa-github-square"></i>
+
+            <i class="fab fa-linkedin"></i>
+
+            <i class="fab fa-twitter-square"></i>
+
+            <i class="fab fa-facebook-square"></i>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
