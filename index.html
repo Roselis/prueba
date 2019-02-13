@@ -10,6 +10,8 @@
 
     <!-- Bootstrap CDN CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <!-- fontawesome CDN CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -30,7 +32,13 @@
         .color-bg .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         }
-
+        footer {
+            font-size: 30px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        footer span {
+            font-weight: bold;
         }
     </style>
 
@@ -70,10 +78,69 @@
 </div>
 
 <div class="container">
-
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Meet & Coffe</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Iguana Page</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Suricata</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+            </div>
+        </div>
+    </div>
 </div>
     <footer class="color-bg">
+        <div class="row">
+            <div class="col-8 col-md-8 text-center">
+                <span>Rosy</span>
+            </div>
+            <div class="col-1 col-md-4">
+                <i class="fab fa-github-square"></i>
 
+                <i class="fab fa-linkedin"></i>
+
+                <i class="fab fa-twitter-square"></i>
+
+                <i class="fab fa-facebook-square"></i>
+            </div>
+        </div>
     </footer>
 
 </body>
